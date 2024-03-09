@@ -1,16 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-     <h1>H&B BLOG</h1>
-    </>
-  )
+    <div className="flex justify-center items-center h-[100vh]">
+      <h1 className="text-3xl">H&B BLOG</h1>
+    </div>
+  );
 }
 
-export default App
+export default App;

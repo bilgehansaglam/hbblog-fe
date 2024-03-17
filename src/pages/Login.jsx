@@ -11,7 +11,7 @@ import FormInput from "../components/FormInput";
 const Login = () => {
   const { theme } = useContext(ThemeContext);
   return (
-    <div className="flex lg:justify-between lg:items-start w-full lg:flex lg:flex-row flex-col h-full">
+    <div className="flex lg:justify-between lg:items-start w-screen lg:flex lg:flex-row flex-col">
       <div className="flex  lg:h-[600px] h-[450px]">
         <Lottie animationData={animatonData} />
       </div>
@@ -25,7 +25,7 @@ const Login = () => {
           </Link>
 
           <div>
-            <h4 className="dark:text-white font-mono text-2xl ml-[-24px]">
+            <h4 className="dark:text-white font-mono lg:text-2xl text-md ml-[-24px]">
               Blog'a Giriş Yap
             </h4>
           </div>
@@ -35,7 +35,7 @@ const Login = () => {
           <FormInput label="şifre" name="password" type="password" />
         </div>
         <div className="font-mono text-sm text-gray-500 lg:flex lg:flex-row flex-col flex items-center lg:gap-2">
-          Henüz hesabınız yok mu? Hemen{" "}
+          Henüz hesabınız yok mu? Hemen
           <Link
             to="/register"
             className="text-blue-500 text-lg hover:text-blue-700"

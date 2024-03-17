@@ -8,11 +8,11 @@ import ThemeContext from "../context/ThemeContext";
 const Home = () => {
   const { theme } = useContext(ThemeContext);
   return (
-    <div className="flex w-full lg:flex-row flex-col justify-between items-center lg:h-screen ">
+    <div className="flex w-full lg:flex-row flex-col lg:justify-between items-center ">
       <div className="lg:w-full w-[80%] justify-center flex">
         <Lottie animationData={animationData} />
       </div>
-      <div className="flex justify-center items-center lg:mr-12 lg:w-full lg:h-screen w-[50%]">
+      <div className="flex justify-center items-center lg:mr-12 lg:w-full  w-[50%]">
         <img src={theme === "light" ? logo : logoDark} />
       </div>
     </div>

@@ -19,7 +19,7 @@ import { ThemeProvider } from "./context/ThemeContext";
 function App() {
   return (
     <ThemeProvider>
-      <div className="flex flex-col items-center h-screen bg-white dark:bg-[#22262f]">
+      <div className="flex flex-col items-center h-full bg-white dark:bg-[#22262f]">
         <Header />
         <div className="container flex h-screen">
           <Routes>

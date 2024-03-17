@@ -13,11 +13,11 @@ const Header = () => {
   const { pathname } = useLocation();
 
   return (
-    <div className="flex justify-between items-center px-8 pt-10 pb-5 mb-4 h-[150px] w-full bg-wihte dark:bg-[#22262f] dark:text-white">
+    <div className="flex justify-between  items-center lg:px-20 px-4 pt-10 pb-5 mb-4 lg:h-[150px] h-[100px] w-screen bg-wihte dark:bg-[#22262f] dark:text-white">
       {/* LOGO */}
       <NavLink
         to="/"
-        className="cursor-pointer flex pl-16  justify-center items-center overflow-hidden p-4"
+        className="cursor-pointer flex lg:pl-16  justify-center items-center overflow-hidden p-4"
       >
         <img
           src={theme === "light" ? logo : logoDark}
@@ -29,7 +29,7 @@ const Header = () => {
 
       {/* Account Area */}
 
-      <div className="flex justify-between items-center h-full overflow-hidden gap-6">
+      <div className="flex justify-between items-center overflow-hidden gap-6">
         {login ? (
           <NavLink to="/login">
             <img
@@ -41,7 +41,7 @@ const Header = () => {
           pathname != "/login" && (
             <NavLink
               to="/login"
-              className="flex mr-10 font-mono border-none px-6 py-1 rounded-xl  text-gray-500 font-medium hover:bg-gray-200 hover:text-gray-800 transition-none dark:text-gray-300  dark:hover:bg-gray-900 dark:hover:text-white"
+              className="flex lg:mr-10 font-mono border-none px-6 py-1 rounded-xl  text-gray-500 font-medium hover:bg-gray-200 hover:text-gray-800 transition-none dark:text-gray-300  dark:hover:bg-gray-900 dark:hover:text-white"
             >
               <button className="flex items-center justify-between gap-3 ">
                 <span className="lg:text-lg text-sm ">Giriş Yap</span>

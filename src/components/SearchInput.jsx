@@ -2,10 +2,10 @@ import React from "react";
 
 const SearchInput = () => {
   return (
-    <div className="flex self-end gap-3 relative text-gray-500 focus-within:text-gray-700">
+    <div className="flex relative text-gray-500 focus-within:text-gray-700">
       <input
         type="search"
-        className="rounded-2xl border-b-2 font-roboto   outline-none h-[30px] text-gray-500 w-[450px]  pr-6 pl-[70px] py-6  placeholder-gray-300 focus:ring-2 focus:ring-gray-300 dark:border-none"
+        className="rounded-2xl border-b-2 font-roboto   outline-none h-[30px] text-gray-500 w-[450px]  pr-6 pl-[70px] py-6  placeholder-gray-300  dark:border-none"
         placeholder="blog ara"
       />
       <div className="absolute inset-y-0 start-0 flex items-center ps-2 pointer-events-none">

@@ -64,16 +64,16 @@ function App() {
 
   return (
     <ThemeProvider>
-      <div className="flex flex-col items-center h-lvh bg-white dark:bg-[#22262f]">
+      <div className="flex flex-col items-center h-[100%] bg-white dark:bg-[#22262f]">
         <Header />
-        <div className="container flex h-lvh">
+        <div className="container flex h-[100%]">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/blogs" element={<Blogs />}>
-              <Route path="/blogs/:id" element={<BlogDetail />} />
+            <Route path="blogs" element={<Blogs />}>
+              <Route path=":id" element={<BlogDetail />} />
             </Route>
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
+            <Route path="login" element={<Login />} />
+            <Route path="register" element={<Register />} />
           </Routes>
         </div>
         <Footer />

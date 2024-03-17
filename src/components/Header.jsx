@@ -17,7 +17,7 @@ const Header = () => {
       {/* LOGO */}
       <NavLink
         to="/"
-        className="cursor-pointer flex pl-16 self-end justify-center items-center overflow-hidden p-4"
+        className="cursor-pointer flex pl-16  justify-center items-center overflow-hidden p-4"
       >
         <img
           src={theme === "light" ? logo : logoDark}

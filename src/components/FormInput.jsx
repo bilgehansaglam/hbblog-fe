@@ -16,8 +16,8 @@ const FormInput = ({ name, type, label }) => {
   };
 
   return (
-    <div className="flex items-center justify-center">
-      <div className="relative w-[500px]">
+    <div className="flex items-center justify-center ">
+      <div className="relative w-full">
         <input
           id={name}
           name={name}

@@ -12,11 +12,11 @@ const Register = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div className="flex justify-between items-start w-full">
-      <div className="flex  h-[600px]">
+    <div className="flex lg:justify-between lg:items-start w-full lg:flex lg:flex-row flex-col">
+      <div className="flex  lg:h-[600px] h-[450px]">
         <Lottie animationData={animatonData} />
       </div>
-      <div className="flex flex-col gap-12 mr-[300px]">
+      <div className="flex flex-col gap-12 lg:mr-[300px] px-12 ">
         <div className="flex items-center justify-start">
           <Link to="/">
             <img

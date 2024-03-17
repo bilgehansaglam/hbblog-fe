@@ -17,56 +17,11 @@ import {
 import Login from "./pages/Login";
 import { ThemeProvider } from "./context/ThemeContext";
 function App() {
-  // const Layout = () => {
-  //   return (
-  //     <ThemeContext.Provider>
-  //     <div className="flex flex-col items-center h-lvh bg-white dark:bg-[#22262f]">
-  //       <Header />
-  //       <div className="container flex">
-  //         <Outlet />
-  //       </div>
-  //       <Footer />
-  //     </div>
-  //     </ThemeContext.Provider>
-  //   );
-  // };
-
-  // const router = createBrowserRouter([
-  //   {
-  //     path: "/",
-  //     element: <Layout />,
-  //     children: [
-  //       {
-  //         path: "/",
-  //         element: <Home />,
-  //       },
-  //       {
-  //         path: "/blogs",
-  //         element: <Blogs />,
-  //         children: [
-  //           {
-  //             path: "/blogs/:id",
-  //             element: <BlogDetail />,
-  //           },
-  //         ],
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     path: "/login",
-  //     element: <Login />,
-  //   },
-  //   {
-  //     path: "/register",
-  //     element: <Register />,
-  //   },
-  // ]);
-
   return (
     <ThemeProvider>
-      <div className="flex flex-col items-center h-[100%] bg-white dark:bg-[#22262f]">
+      <div className="flex flex-col items-center h-screen bg-white dark:bg-[#22262f]">
         <Header />
-        <div className="container flex h-[100%]">
+        <div className="container flex h-screen">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="blogs" element={<Blogs />}>

@@ -11,7 +11,7 @@ import FormInput from "../components/FormInput";
 const Login = () => {
   const { theme } = useContext(ThemeContext);
   return (
-    <div className="flex lg:justify-between lg:items-start w-full lg:flex lg:flex-row flex-col">
+    <div className="flex lg:justify-between lg:items-start w-full lg:flex lg:flex-row flex-col h-full">
       <div className="flex  lg:h-[600px] h-[450px]">
         <Lottie animationData={animatonData} />
       </div>
@@ -34,7 +34,7 @@ const Login = () => {
           <FormInput label="e-mail" name="email" type="email" />
           <FormInput label="şifre" name="password" type="password" />
         </div>
-        <div className="font-mono text-sm text-gray-500">
+        <div className="font-mono text-sm text-gray-500 lg:flex lg:flex-row flex-col flex items-center lg:gap-2">
           Henüz hesabınız yok mu? Hemen{" "}
           <Link
             to="/register"

@@ -44,7 +44,7 @@ const Header = () => {
               className="flex mr-10 font-mono border-none px-6 py-1 rounded-xl  text-gray-500 font-medium hover:bg-gray-200 hover:text-gray-800 transition-none dark:text-gray-300  dark:hover:bg-gray-900 dark:hover:text-white"
             >
               <button className="flex items-center justify-between gap-3 ">
-                <span className="text-lg ">Giriş Yap</span>
+                <span className="lg:text-lg text-sm ">Giriş Yap</span>
                 <LoginIcon />
               </button>
             </NavLink>

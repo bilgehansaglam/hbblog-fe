@@ -11,7 +11,6 @@ const Header = () => {
   const [login, setLogin] = useState(false);
   const { theme, changeTheme } = useContext(ThemeContext);
   const { pathname } = useLocation();
-  console.log(pathname);
 
   return (
     <div className="flex justify-between items-center px-8 pt-10 pb-5 mb-4 h-[150px] w-full bg-wihte dark:bg-[#22262f] dark:text-white">

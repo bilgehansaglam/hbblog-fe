@@ -11,7 +11,7 @@ const Blogs = () => {
       <div className="flex items-center">
         <Categories />
         <div className="flex justify-end w-full mt-6">
-          <button className="border-2 px-4 py-2 rounded-xl  dark:bg-gray-200 dark:hover:bg-white transition duration-150 flex gap-2 bg-gray-600 text-gray-100 hover:bg-gray-800 dark:text-gray-600 ">
+          <button className="border-2 px-4 py-2 rounded-xl  dark:bg-gray-300 dark:hover:bg-white transition duration-150 flex gap-2 bg-gray-600 text-gray-100 hover:bg-gray-800 dark:text-gray-600 cursor-pointer">
             Post Oluştur
             <CreateIcon className="text-gray-100 dark:text-gray-500" />
           </button>

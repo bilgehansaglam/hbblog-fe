@@ -121,9 +121,21 @@ const Login = () => {
           </div>
         </div>
         <div className="flex flex-col gap-6">
-          <FormInput name="email" type="email" />
-          <FormInput name="password" type="password" />
+          <FormInput label="e-mail" name="email" type="email" />
+          <FormInput label="şifre" name="password" type="password" />
         </div>
+        <div className="font-mono text-sm text-gray-500">
+          Henüz hesabınız yok mu? Hemen{" "}
+          <Link
+            to="/register"
+            className="text-blue-500 text-lg hover:text-blue-700"
+          >
+            Kayıt ol !
+          </Link>
+        </div>
+        <buttton className="border-none px-4 py-2 rounded-xl  dark:bg-gray-400 dark:hover:bg-white transition duration-150  gap-2 bg-gray-600 text-gray-100 hover:bg-gray-800 dark:text-gray-600  flex justify-center items-center cursor-pointer">
+          Giriş Yap
+        </buttton>
       </div>
     </div>
   );
